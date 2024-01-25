@@ -1,4 +1,5 @@
 let N = 30
+let primo = [];
 
 function isPrime (num) {
     if ( num <= 1 ){
@@ -18,7 +19,10 @@ function isPrime (num) {
 
 for (let i = 2; i <=N; i++){
     if(isPrime(i)){
-        console.log(i)
+        console.log(i);
+        primo.push(i);
     }
 }
+
+console.log(primo);
 
